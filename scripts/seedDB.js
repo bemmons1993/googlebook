@@ -9,11 +9,11 @@ mongoose.connect(
 );
 
 const bookSeed = {
-    authors: ["J.K. Rowling"],
-    description: "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
-    image: "https://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70NhAbzr01CLtn-rhmR_twRnH7jAB_T7q0A2RsFa4nP_aewWfFADl73fx7OYNet_82bEPHrOqzfEycRGOW1k5w9z-DSziiJ0JKuE7z8Ap8MNGakp_GpIso2fiirs19ciuNq9HXf",
-    link: "https://books.google.com/books?id=sxFHPgAACAAJ&newbks=0&hl=en&source=newbks_fb",
-    title: "Harry Potter and the Sorcerer's Stone",
+    authors: ["Suzanne Collins"],
+    description: "Set in a dark vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. When sixteen-year-old Katniss Everdeen steps forward to take her younger sister's place in the games, she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature.",
+    image: "http://books.google.com/books/content?id=sazytgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    link: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api",
+    title: "The Hunger Games",
 }
 
 db.Book
