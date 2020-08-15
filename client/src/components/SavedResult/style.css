@@ -1,6 +1,8 @@
 .card{
     border-radius: 10px;
-    background-color: lightgrey
+    background-color: lightgrey;
+    margin-bottom: 30px;
+    
 }
 
 .saved-list{
@@ -13,6 +15,7 @@
     margin-left: 10px;
     background-color: yellow;
     color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .viewBook {

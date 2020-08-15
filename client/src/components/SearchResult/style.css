@@ -1,6 +1,8 @@
 .card{
     border-radius: 10px;
-    background-color: lightgrey
+    background-color: lightgrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 .search-list{
