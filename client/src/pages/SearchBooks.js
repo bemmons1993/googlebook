@@ -7,7 +7,6 @@ import SearchResult from "../components/SearchResult"
 
 
 class SearchBooks extends Component {
-    //create state
     state = {
         search: "",
         books: [],
@@ -15,26 +14,20 @@ class SearchBooks extends Component {
         message: ""
     };
 
-    //function to take value of what enter in the search bar
     handleInputChange = event => {
         this.setState({ search: event.target.value })
     }
 
-    //function to control the submit button of the search form 
     handleFormSubmit = event => {
         event.preventDefault();
-        // once it clicks it connects to the google book api with the search value
         API.getGoogleSearchBooks(this.state.search)
             .then(res => {
                 if (res.data.items === "error") {
                     throw new Error(res.data.items);
                 }
                 else {
-                    // store response in a array
-                    let results = res.data.items
-                    //map through the array 
+                    let results = res.data.items 
                     results = results.map(result => {
-                        //store each book information in a new object 
                         result = {
                             key: result.id,
                             id: result.id,
@@ -46,7 +39,7 @@ class SearchBooks extends Component {
                         }
                         return result;
                     })
-                    // reset the sate of the empty books array to the new arrays of objects with properties geting back from the response
+                    
                     this.setState({ books: results, error: "" })
                 }
             })
@@ -54,7 +47,6 @@ class SearchBooks extends Component {
     }
 
     handleSavedButton = event => {
-        // console.log(event)
         event.preventDefault();
         console.log(this.state.books)
         let savedBooks = this.state.books.filter(book => book.id === event.target.id)
@@ -65,7 +57,9 @@ class SearchBooks extends Component {
     }
     render() {
         return (
+            
             <Container fluid>
+                
                 <Jumbotron>
                     <h1 className="text-white">Find A Book!</h1>
                 </Jumbotron>
@@ -83,7 +77,9 @@ class SearchBooks extends Component {
                 <Container>
                     <SearchResult books={this.state.books} handleSavedButton={this.handleSavedButton} />
                 </Container>
+            
             </Container>
+        
         )
     }
 

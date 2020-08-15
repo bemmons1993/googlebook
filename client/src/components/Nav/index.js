@@ -4,6 +4,7 @@ import "./style.css"
 
 function Nav() {
     return (
+        
         <nav className="navbar">
             <a className="navbar-brand" href="/">
                 <h2 className="text-white">Google Book Search</h2>
@@ -19,7 +20,8 @@ function Nav() {
                 </ul>
             </div>
         </nav>
-    );
+   
+   );
 }
 
 export default Nav;
