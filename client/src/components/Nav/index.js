@@ -15,7 +15,7 @@ function Nav() {
                         <a className="nav-link" href="/"><button type="button" className="btn btn-warning text-white">Search Books</button></a>
                     </li>
                     <li className="nav-item" id="report">
-                        <a className="nav-link" href="/saved"><button type="button" className="btn btn-warning text-white">Saved Books</button></a>
+                        <a className="button2" href="/saved"><button type="button" className="btn btn-warning text-white">Saved Books </button></a>
                     </li>
                 </ul>
             </div>
